@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationAbsen">
         <activity
+            android:name=".CheckinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

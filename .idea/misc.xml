@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_checkin.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_history.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_main_menu.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/item_holder.xml" value="0.17760416666666667" />
       </map>
     </option>
   </component>
