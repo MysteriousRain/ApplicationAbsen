@@ -13,6 +13,10 @@ interface ILogin {
     @GET("api/absen/all")
     fun getAllLogin(@Query("filter")filter:String): Call<LoginResponse>
 
+    @Headers("X-Api-Key:7CEA5BD21C9B664D78E37276C91FAB02")
+    @GET("api/AbsenStampTime")
+    fun getAllStamp()
+
 
 
 }

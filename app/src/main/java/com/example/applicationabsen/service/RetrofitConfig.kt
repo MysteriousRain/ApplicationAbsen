@@ -28,5 +28,6 @@ class RetrofitConfig {
     }
 
     fun getLogin() = getRetrofit().create(ILogin::class.java)
+    fun fetchDataStamp() = getRetrofit().create(HistoryService::class.java)
 
 }
