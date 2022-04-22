@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_checkin.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_history.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/satrio keren/Documents/bootcamp/ApplicationAbsen/app/src/main/res/layout/activity_main.xml" value="0.25" />

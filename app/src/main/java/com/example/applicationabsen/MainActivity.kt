@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.applicationabsen.model.LoginRequest
+import com.example.applicationabsen.model.LoginResponse
 import com.example.applicationabsen.model.UserResponse
 import com.example.applicationabsen.service.RetrofitConfig
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,16 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener({
         RetrofitConfig().getLogin().getAllLogin("filter=&field=&start=&limit=&filters[0][co][0][fl]=username&filters[0][co][0][op]=equal&filters[0][co][0][vl]=${loginEditFieldUsername.text.toString()}&filters[0][co][0][lg]=and&filters[0][co][1][fl]=password&filters[0][co][1][op]=equal&filters[0][co][1][vl]=${loginEditFieldPassword.text.toString()}&filters[0][co][1][lg]=and&sort_field=&sort_order=ASC")
-            .enqueue(object :Callback<LoginRequest>{
+            .enqueue(object :Callback<LoginResponse>{
                 override fun onResponse(
-                    call: Call<LoginRequest>,
-                    response: Response<LoginRequest>
+                    call: Call<LoginResponse>,
+                    response: Response<LoginResponse>
                 ) {
-                    Toast.makeText(this@MainActivity, "Login berhasil", Toast.LENGTH_LONG)
-                        .show()
+
+                    Toast.makeText(this@MainActivity,(response.body() as LoginResponse).message,Toast.LENGTH_LONG).show()
+
+                    val intent = Intent(this@MainActivity, MainMenuActivity::class.java)
+                    startActivity(intent)
                 }
 
-                override fun onFailure(call: Call<LoginRequest>, t: Throwable) {
+                override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                     Log.e("error request",t.localizedMessage.toString())
                 }
 

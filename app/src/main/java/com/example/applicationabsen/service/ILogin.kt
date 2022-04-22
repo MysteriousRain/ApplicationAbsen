@@ -1,7 +1,5 @@
 package com.example.applicationabsen.service
-
-
-import com.example.applicationabsen.model.LoginRequest
+import com.example.applicationabsen.model.LoginResponse
 import com.example.applicationabsen.model.UserResponse
 import retrofit2.Call
 import retrofit2.http.Body
@@ -13,7 +11,7 @@ interface ILogin {
 
     @Headers("X-Api-Key:7CEA5BD21C9B664D78E37276C91FAB02")
     @GET("api/absen/all")
-    fun getAllLogin(@Query("filter")filter:String): Call<LoginRequest>
+    fun getAllLogin(@Query("filter")filter:String): Call<LoginResponse>
 
 
 
